@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FoodyFinder - Discover delicious dishes, one review at a time">
+  <title>FoodyFinder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+    <header class="site-header">
+        <a href="index.html" class="logo-link">
+            <img src="assets/FoodyFinder_Title.png" alt="FoodyFinder Logo" class="logo-img">
+        </a>
+        <div class="auth-buttons">
+            <a href="html/login.html" class="btn login-btn">Login</a>
+            <a href="html/signup.html" class="btn signup-btn">Sign Up</a>
+        </div>
+    </header>
+
+    <div class="site-description">
+        <p>Discover delicious dishes, one review at a time.</p>
+    </div>
+
+    <!-- Search + Filter Section -->
+    <div class="search-bar-wrapper">
+        <input type="text" id="searchInput" placeholder="Cari makanan, restoran, atau ulasan...">
+        
+        <select id="filterSelect" class="filter-select">
+            <option value="">Filter (All)</option>
+            <option value="rating">Rating (Highest)</option>
+            <option value="price-asc">Price (Lowest)</option>
+            <option value="price-desc">Price (Highest)</option>
+            <option value="popularity">Popularity</option>
+        </select>
+
+        <div class="search-buttons">
+            <button id="searchButton" class="search-btn"><i class="fas fa-search"></i> Search</button>
+        </div>
+    </div>
+
+    <!-- Tags Input -->
+    <div class="tag-input-section">
+        <div id="tagsDisplayContainer" class="tags-display-container">
+            <input type="text" id="tagInput" placeholder="Tambahkan tag (tekan Enter)..." />
+        </div>
+        <ul class="tag-suggestions" id="tagSuggestions"></ul>
+    </div>
+
+    <h2 class="top-picks-title" id="topPicksTitle"><i class="fas fa-utensils"></i> Top picks for you</h2>
+
+    <!-- Suggestions Section -->
+    <div class="suggestions" id="suggestionsSection">
+        <!-- Pick 1 -->
+        <div class="suggestion-box">
+            <a href="html/review-pizza.html">
+                <img src="assets/pizza.png" alt="Margherita Pizza">
+                <div class="suggestion-content">
+                    <h3>🍕 Margherita Pizza</h3>
+                    <p class="meta">💲Rp. 42.000 &nbsp; | &nbsp; ⭐ 4.8 &nbsp; </p>
+                    <p class="meta">📍 Napoli Bistro &nbsp; | &nbsp; 📏 1.1 km</p>
+                    <p class="description">A classic Italian pizza topped with fresh mozzarella, tomatoes, and basil.</p>
+                    <div class="tags">
+                        <span class="tag">Italian</span>
+                        <span class="tag">Vegetarian</span>
+                        <span class="tag">Cheesy</span>
+                        <span class="tag">Affordable</span>
+                        <span class="tag">Wood-Grilled</span>
+                        <span class="tag">Classic</span>
+                        <span class="tag">Lunch</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html> 
